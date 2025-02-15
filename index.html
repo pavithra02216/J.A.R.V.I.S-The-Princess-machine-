@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hi I am Princess" />
+    <title>Princess</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./iron-pic.png">
+  </head>
+  <body>
+    <audio src="./princess.mp3" id="p_intro"></audio>
+    <audio src="./power up.mp3" id="turn_on"></audio>
+
+    <div class="machine hide_on_small">
+      <div class="clock cont">
+        <img src="./clock1.png" class="icon" />
+        <p id="time"></p>
+      </div>
+      <div class="internet cont">
+        <img src="./internet1.png" class="icon" />
+        <p id="internet"></p>
+      </div>
+      <div class="battery cont">
+        <img src="./battery1.png" class="icon" />
+        <p id="battery"></p>
+      </div>
+      <img src="./heart.gif" id="heart" />
+    </div>
+
+    <button id="start_princess_btn" class="hide_on_small">
+      <img src="start.gif" alt="start princess" />
+      <p>Start Recognition</p>
+    </button>
+
+    <button id="stop_princess_btn" class="hide_on_small">
+      <img src="stop.gif" alt="start princess" />
+      <p>Stop Recognition</p>
+    </button>
+
+    <div class="small_princess hide_on_small">
+      <button id="small_princess"><img src="./princess.gif" height="350"><p>Make Me Small</p></button>
+    </div>
+
+    <div class="princess_setup in_middle hide_on_small">
+      <label for="">Your Name</label>
+      <input type="text" />
+      <br />
+      <label for="">Your Bio</label>
+      <input type="text" />
+      <br />
+      <label for="">Your Location</label>
+      <input type="text" />
+      <br />
+      <label for="">Instagram Profile</label>
+      <input type="text" />
+      <br />
+      <label for="">Twitter Profile</label>
+      <input type="text" />
+      <br />
+      <label for="">GitHub Profile</label>
+      <input type="text" />
+      <br />
+      <button id="sub_btn">Submit</button>
+    </div>
+
+    <div class="commands in_middle hide_on_small"></div>
+
+    <div class="new_princess_window">
+      <img src="heart.gif" height="230" id="princess_start"/>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
